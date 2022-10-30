@@ -51,7 +51,7 @@ function source:complete(params, callback)
     return callback()
   end
 
-  local api_url = "https://api-inference.huggingface.co/models/" .. params.option.models
+  local api_url = "https://api-inference.huggingface.co/models/" .. params.option.["model"]
 
   local header = {
     authorization = "Bearer " .. params.option.key,
